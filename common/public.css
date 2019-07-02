@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* 
+* 定义一些公用变量，包括但不限于，颜色等
+* 
+*  */
+/* 图片样式 */
+/* 字体颜色 */
+/* 字体大小 */
+/* text 字符超出省略 === 混合器 */
+.content {
+  background-color: #ededed;
+  flex-direction: column; }
+
+/* 发现列表 */
+.find-list {
+  width: 100%;
+  flex: 1;
+  flex-direction: column; }
+  .find-list .list {
+    background-color: #fff;
+    height: 100upx;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc; }
+    .find-list .list .icon-wrap {
+      width: 140upx;
+      height: 100upx;
+      align-items: center; }
+      .find-list .list .icon-wrap .left-icon {
+        width: 60upx;
+        margin-left: 40upx; }
+      .find-list .list .icon-wrap .right-arrow {
+        width: 40upx;
+        margin-left: 60upx; }
+    .find-list .list .list-text {
+      flex: 1;
+      align-items: center; }
+      .find-list .list .list-text text {
+        width: 450upx;
+        color: #333; }
+  .find-list .list:last-child {
+    border-bottom: none; }
+
+/* 个人中心 样式 */
+.personal-info {
+  flex-direction: column;
+  margin-bottom: 20upx;
+  background-color: #ffffff; }
+  .personal-info .camera-section {
+    justify-content: flex-end; }
+    .personal-info .camera-section image {
+      width: 60upx;
+      height: 60upx;
+      margin-top: 54upx;
+      margin-right: 30upx; }
+  .personal-info .personal-section {
+    padding: 40upx 30upx 80upx 60upx; }
+    .personal-info .personal-section .head-portrait image {
+      width: 160upx;
+      height: 160upx;
+      margin-right: 20upx;
+      border-radius: 20upx; }
+    .personal-info .personal-section .name-section {
+      flex-direction: column;
+      justify-content: space-between; }
+      .personal-info .personal-section .name-section .name {
+        width: 480upx;
+        font-size: 40upx;
+        font-weight: 800;
+        color: #333; }
+      .personal-info .personal-section .name-section .wx-number {
+        align-items: center; }
+        .personal-info .personal-section .name-section .wx-number .number {
+          width: 400upx;
+          font-size: 32upx;
+          color: #666;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .personal-info .personal-section .name-section .wx-number .wx-code {
+          width: 40upx;
+          height: 40upx; }
+        .personal-info .personal-section .name-section .wx-number .right-arrow {
+          width: 40upx;
+          margin-left: 10upx; }

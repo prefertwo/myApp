@@ -1,0 +1,76 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/find/find",
+			"style": {
+				"navigationBarTextStyle": "black"
+			}
+		},
+
+		{
+			"path": "pages/tabBar/mine/mine",
+			"style": {
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/tabBar/addressBook/addressBook",
+			"style": {
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/tabBar/weixin/weixin",
+			"style": {
+				"navigationBarTextStyle": "black"
+			}
+		}
+
+	    ,{
+            "path" : "pages/mine/commonPage/commonPage",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom"
+		// "navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "uni-app",
+		// "navigationBarBackgroundColor": "#F8F8F8",
+		// "backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#20c065",
+		"list": [{
+				"pagePath": "pages/tabBar/weixin/weixin",
+				"text": "微信",
+				"iconPath": "static/icons/message_0.png",
+				"selectedIconPath": "static/icons/message_1.png"
+			},
+			{
+				"pagePath": "pages/tabBar/addressBook/addressBook",
+				"text": "通讯录",
+				"iconPath": "static/icons/address_book_0.png",
+				"selectedIconPath": "static/icons/address_book_1.png"
+			},
+			{
+				"pagePath": "pages/tabBar/find/find",
+				"text": "发现",
+				"iconPath": "static/icons/find_0.png",
+				"selectedIconPath": "static/icons/find_1.png"
+			},
+			{
+				"pagePath": "pages/tabBar/mine/mine",
+				"text": "我",
+				"iconPath": "static/icons/mine_0.png",
+				"selectedIconPath": "static/icons/mine_1.png"
+			}
+		]
+	},
+	"condition": {
+		"list": [
+			{
+				"name":"我的",
+				"path":"pages/tabBar/mine/mine"
+			}
+		]
+	}
+}

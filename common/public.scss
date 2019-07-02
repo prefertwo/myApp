@@ -1,0 +1,136 @@
+	// @import url('~@/common/publicVariables.scss'); // scss 怎么使用绝对路径引入
+
+	@import './publicVariables.scss';
+
+	
+	$border_style: 1px solid #ccc;
+	
+	$item_bg_color: #ffffff;
+	
+	/* 图片样式 */
+	$image_radius: 20upx;
+	
+	/* 字体颜色 */
+	$text_color_basic: #333;
+	$text_color_grey: #666;
+	$text_color_warn: #f00;
+	
+	/* 字体大小 */
+	$text_size_big: 54upx;
+	$text_size_normal: 40upx;
+	$text_size_small: 32upx;
+	$text_size_mini: 24upx;
+	
+	/* text 字符超出省略 === 混合器 */
+	@mixin ellipsis {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.content {
+		background-color: $bg_color;
+		flex-direction: column;
+	}
+
+
+	/* 发现列表 */
+	.find-list {
+		width: 100%;
+		flex: 1;
+		flex-direction: column;
+		.list {
+			background-color: #fff;
+			height: 100upx;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			border-bottom: $border_style;
+			.icon-wrap {
+				width: 140upx;
+				height: 100upx;
+				align-items: center;
+
+				.left-icon {
+					width: 60upx;
+					margin-left: 40upx;
+				}
+				.right-arrow {
+					width: 40upx;
+					margin-left: 60upx;
+				}
+			}
+			.list-text {
+				flex: 1;
+				align-items: center;
+
+				text {
+					width: 450upx;
+					color: $text_color_basic;
+				}
+			}
+		}
+		.list:last-child {
+			border-bottom: none;
+		}
+	}
+	
+	/* 个人中心 样式 */
+	.personal-info {
+		flex-direction: column;
+		margin-bottom: $margin_bottom;
+		background-color: $item_bg_color;
+		
+		.camera-section {
+			justify-content: flex-end;
+			
+			image {
+				width: 60upx;
+				height: 60upx;
+				margin-top: 54upx;
+				margin-right: 30upx;
+			}
+		}
+		.personal-section {
+			padding: 40upx 30upx 80upx 60upx;
+			
+			.head-portrait {
+				image {
+					width: 160upx;
+					height: 160upx;
+					margin-right: 20upx;
+					border-radius: $image_radius;
+				}
+			}
+			.name-section {
+				flex-direction: column;
+				justify-content: space-between;
+				.name {
+					width: 480upx;
+					font-size: 40upx;
+					font-weight: 800;
+					color: $text_color_basic;
+				}
+				.wx-number {
+					align-items: center;
+					.number {
+						width: 400upx;
+						font-size: $text_size_small;
+						color: $text_color_grey;
+						@include ellipsis;
+					}
+					.wx-code {
+						width: 40upx;
+						height: 40upx;
+					}
+					.right-arrow {
+						width: 40upx;
+						margin-left: 10upx;
+					}
+				}
+				
+				
+			}
+		}
+	}
+	

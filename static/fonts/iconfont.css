@@ -1,0 +1,108 @@
+@font-face {font-family: "iconfont";
+  src: url('~@/static/fonts/iconfont.ttf');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chakan:before {
+  content: "\e600";
+}
+
+.icon-unie651:before {
+  content: "\e6ff";
+}
+
+.icon-tianmao:before {
+  content: "\e757";
+}
+
+.icon-biaoqian:before {
+  content: "\e733";
+}
+
+.icon-saoyisao:before {
+  content: "\e64b";
+}
+
+.icon-weixinzhifu:before {
+  content: "\e650";
+}
+
+.icon-wodeqiaquan:before {
+  content: "\e666";
+}
+
+.icon-yonghuming:before {
+  content: "\e627";
+}
+
+.icon-shoucang:before {
+  content: "\e65a";
+}
+
+.icon-xiangce:before {
+  content: "\e60c";
+}
+
+.icon-shezhi-xue:before {
+  content: "\e631";
+}
+
+.icon-sousuo:before {
+  content: "\e611";
+}
+
+.icon-Nike:before {
+  content: "\e617";
+}
+
+.icon-adidas:before {
+  content: "\e61a";
+}
+
+.icon-diannao:before {
+  content: "\e640";
+}
+
+.icon-add-user:before {
+  content: "\e605";
+}
+
+.icon-xiaochengxu:before {
+  content: "\e61b";
+}
+
+.icon-jiahao:before {
+  content: "\e616";
+}
+
+.icon-weixinzhifu1:before {
+  content: "\e60e";
+}
+
+.icon-biaoqing:before {
+  content: "\e60b";
+}
+
+.icon-ico:before {
+  content: "\e646";
+}
+
+.icon-qiabao:before {
+  content: "\e621";
+}
+
+.icon-idcard:before {
+  content: "\e625";
+}
+
+.icon-moment:before {
+  content: "\e62b";
+}
+
