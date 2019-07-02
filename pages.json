@@ -28,6 +28,10 @@
             "path" : "pages/mine/commonPage/commonPage",
             "style" : {}
         }
+        ,{
+            "path" : "pages/mine/wxpay/wxpay",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom"

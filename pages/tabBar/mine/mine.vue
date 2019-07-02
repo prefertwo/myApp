@@ -54,7 +54,7 @@
 						id: 1,
 						text: '支付',
 						icon: '/static/icons/wx_pay.png',
-						component: ''
+						component: 'wxpay'
 					},
 					{
 						id: 2,
@@ -94,10 +94,13 @@
 			...mapState(['userInfo'])
 		},
 		methods: {
-			goNext() {
-				uni.navigateTo({
-					url: '/pages/mine/commonPage/commonPage'
-				})
+			goNext(list) {
+				console.log(list);
+				if(list.component) {
+					uni.navigateTo({
+						url: `/pages/mine/${list.component}/${list.component}`
+					})
+				}
 			}
 		}
 		

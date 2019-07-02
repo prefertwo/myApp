@@ -6,8 +6,8 @@ Vue.use(Vuex)
 const state = {
 	userInfo: {
 		id: 199103030939,
-		name: '郭正',
-		number: 'GZ19910303'
+		name: '王力宏',
+		number: 'foreverLove1991'
 	},
 	userId: {},
 	
